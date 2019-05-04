@@ -106,10 +106,10 @@ void Ant::moveForward()
 void Ant::moveAnt(int r, int c)
 {
 	//if the space is white
-	if (board->getColor(r, c) == WHITE)
-	{	
-		turnRight();
-	} 
+    if (board->getColor(r, c) == WHITE)
+    {	
+        turnRight();
+    } 
 
 	//if the space is black
 	else 

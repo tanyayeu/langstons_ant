@@ -3,7 +3,7 @@ CXXFLAGS = -std=c++0x
 CXXFLAGS += -Wall 
 CXXFLAGS += -pedantic-errors
 CXXFLAGS += -g
-LDFLAGS = -lboost_date_time
+#LDFLAGS = -lboost_date_time
 
 OBJS = main.o Board.o Ant.o getInput.o printAntBoard.o
 
@@ -14,7 +14,7 @@ HEADERS = Board.hpp Ant.hpp getInput.hpp printAntBoard.hpp
 TARGET = project1 
 
 ${TARGET}: ${OBJS} ${HEADERS}
-	${CXX} ${LDFLAGS} ${OBJS} -o ${TARGET}
+	${CXX} ${OBJS} -o ${TARGET}
 
 ${OBJS}: ${SRCS}
 	${CXX} ${CXXFLAGS} -c $(@:.o=.cpp)
