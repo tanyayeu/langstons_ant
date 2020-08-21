@@ -1,1 +1,3 @@
-# langstons_ant
+# Langstons_ant
+
+Langston's ant written in c++
